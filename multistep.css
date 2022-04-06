@@ -1,0 +1,166 @@
+.card {
+    background: rgba(255, 255, 255, 0.2);
+    border: solid transparent;
+    border-radius: 1em;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    margin: 5em;  
+    padding: .5rem;
+    max-width: 300px;
+    margin: 0 auto;
+    animation: fade 250ms ease-in-out forwards;
+  }
+   
+  .form-group:last-child {
+    margin: 0;
+  }
+  
+  .form-group > label {
+    font-weight: bold;
+    font-size: .8em;
+    color: #333;
+  }
+  
+  .form-group > input {
+    border: 1px solid #333;
+    border-radius: .25em;
+    font-size: 1rem;
+    padding: .25em;
+  }
+  
+  .step-title {
+    margin: 0;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .card.active {
+    animation: slide 250ms 125ms ease-in-out both;
+  }
+  
+  .multi-step-form {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(200%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fade {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(.75);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+      transform: scale(0);
+    }
+  }
+
+
+  :root {
+    --cmd-primary: #FFF;
+    --cmd-secondary: #000;
+    --minor-one: #34A8E0;
+    --minor-two: #E9590E;
+    --minor-three: #3AAA34;
+}
+
+/* @supports (background: linear-gradient) { */
+html {
+    background: linear-gradient(10deg, var(--minor-two) 24%, rgba(0,0,0,0) 24%), linear-gradient(21deg, var(--minor-three) 46%, var(--minor-one) 46%);
+    background-size: cover;
+    background-attachment: fixed;
+    color: black ;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1 {
+    color: black ;
+    text-align: center;
+}
+
+fieldset {
+    /* background-color: transparent;
+    border-radius: .3em; */
+    /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
+    /* box-shadow: rgba(58, 170, 52, 0.4) 5px 5px, rgba(58, 170, 52, 0.3) 10px 10px, rgba(58, 170, 52, 0.2) 15px 15px, rgba(58, 170, 52, 0.1)  20px 20px, rgba(58, 170, 52, 0.05) 25px 25px; */
+    background: rgba(255, 255, 255, 0.2);
+    border: solid transparent;
+    border-radius: 1em;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    margin: 5em;
+    /* backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px); */
+}
+
+legend {
+    /* color: #3AAA34; */
+    color: black ;
+    font-size:x-large
+}
+
+.button {
+    background-color: #1899D6;
+    border: solid transparent;
+    border-radius: 1em;
+    color: #ffff;
+    cursor: pointer;
+    font-family: din-round,sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+    letter-spacing: .8px;
+    line-height: 20px;
+    padding: 13px 16px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 10em;
+  }
+
+.button:hover {
+    filter: brightness(1.1);
+}
+
+select {
+    border: none;
+    border-radius: 1em;
+    border: solid transparent;
+    height: 3em;
+    text-align: center;
+    
+}
+
+input[type="number"] {
+    border: solid transparent;
+    border-radius: 1em;
+    height: 3em;
+    text-align: center;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+    opacity: 1;
+}
+
+textarea {
+    border: solid transparent;
+    border-radius: 1em;
+    text-align: center;
+}
+
+
